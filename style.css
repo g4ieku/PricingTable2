@@ -1,0 +1,109 @@
+* {
+   font-family: "Montserrat", sans-serif;
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   outline: none;
+   border: none;
+   list-style: none;
+   text-decoration: none;
+}
+
+body {
+   background: #f0ead2;
+}
+
+.container {
+   min-height: 100vh;
+   text-align: center;
+}
+
+.container .box_container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 20px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+   gap: 20px;
+}
+
+.container .box_container .box {
+   text-align: center;
+   background: #dde5b6;
+   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.container .box_container .box:nth-child(2) {
+   border: 2px solid #000;
+}
+.container .box_container .box:nth-child(2) .btn {
+   background: #a98467;
+   border: 1px solid #000;
+}
+
+.container .box_container .box h3 {
+   font-size: 24px;
+   padding: 17px 0;
+   color: #000;
+}
+
+.container .box_container .box .price {
+   color: #fff;
+   background: #a98467;
+   font-weight: 600;
+   font-size: 38px;
+}
+
+.container .box_container .box .price.year {
+   display: none;
+}
+
+.container .box_container .box .list {
+   margin: 20px 0;
+}
+
+.container .box_container .box p {
+   padding: 7px 0;
+   font-size: 17px;
+}
+
+.container .box_container .box .list p i {
+   padding-right: 5px;
+   color: #a98467;
+}
+
+.container .box_container .box .btn {
+   margin: 20px;
+   display: block;
+   padding: 10px;
+   font-size: 18px;
+   color: #fff;
+   background: #6c584c;
+}
+
+.container .box_container .box .btn:hover {
+   transform: translateY(-5px) rotate(-2deg);
+   transition: all 0.2s linear;
+}
+
+/* Price Toggler */
+.container .price_toggler {
+   margin-top: 25px;
+   display: inline-block;
+   padding: 5px;
+   border: 1px solid #000;
+   background: #fff;
+}
+
+.container .price_toggler span {
+   padding: 7px 20px;
+   color: #6c584c;
+   font-size: 18px;
+   display: inline-block;
+   cursor: pointer;
+}
+
+.container .price_toggler span.active {
+   background: #a98467;
+   color: #fff;
+}
