@@ -107,3 +107,9 @@ body {
    background: #a98467;
    color: #fff;
 }
+
+@media (max-width: 450px) {
+   .container .box_container {
+      grid-template-columns: 1fr;
+   }
+}
